@@ -1,0 +1,24 @@
+**Activity 2.1**
+#Block A
+Check temp > 20 and not is_raining
+    not is_raining = False
+    T and F is False
+    Therefore this block doesn't work and goes to next condition(Elif)
+Check temp <= 20 or is_raining
+    F or T = True
+    Therefore this block works and doesn't go to (Else)
+
+Result : Stay indoors or bring an umbrella.
+
+#Block B
+check if letters is alphabetic ( c.isalpha() )and not a, e, i, o, u by changing them to lowercased to check
+collect the letters that passed the condition and print out.
+
+Result : 'p','y','t','h','n','g'
+
+**Activity 2.2**
+You want to eat Noodle cup, but to lazy to walk to the kitchen.
+if you choose to eat air (input : nah too lazy) You're hungry and you've gone mad.
+    you walked there and have to choose which flavor to eat (just choose whatever you what it's doesn't matter)
+if you choose to walk there (input : i don't want to eat, gonna eat smt) You're not hungry anymore. 
+if you choose to do something else (input : you choose to eat bread that sat on your table for a months) You got food poisoning. GG

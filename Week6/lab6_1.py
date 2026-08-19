@@ -27,6 +27,18 @@ def power(base, exponent=2):
     return base ** exponent
 
 
+def get_float(prompt, allow_blank=False):
+    """Prompts for a float, re-prompting on invalid input. Returns None if blank and allow_blank."""
+    while True:
+        value = input(prompt)
+        if allow_blank and value == "":
+            return None
+        try:
+            return float(value)
+        except ValueError:
+            print("Invalid number. Please enter a numeric value.")
+
+
 def main():
     while True:
         print("\n--- Simple Calculator ---")
@@ -36,7 +48,7 @@ def main():
         print("4. Divide")
         print("5. Power (base ** exponent, default exponent=2)")
         print("6. Quit")
-        choice = input("Choose an operation (1-6): ")
+        choice = input("Choose an operation (1-6): ").strip()
 
         if choice == "6":
             print("Goodbye!")
@@ -46,13 +58,15 @@ def main():
             print("Invalid choice. Please try again.")
             continue
 
-        num1 = float(input("Enter the first number: "))
+        num1 = get_float("Enter the first number: ")
 
         if choice == "5":
-            has_exp = input("Enter an exponent (leave blank for default 2): ")
-            result = power(num1, float(has_exp)) if has_exp else power(num1)
+            exponent = get_float(
+                "Enter an exponent (leave blank for default 2): ", allow_blank=True
+            )
+            result = power(num1) if exponent is None else power(num1, exponent)
         else:
-            num2 = float(input("Enter the second number: "))
+            num2 = get_float("Enter the second number: ")
             if choice == "1":
                 result = add(num1, num2)
             elif choice == "2":

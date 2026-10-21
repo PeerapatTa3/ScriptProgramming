@@ -459,23 +459,42 @@ Activities/
 │               ├── test_task.py
 │               └── test_task_manager.py
 │
-└── Class_activity_3_Interacting_with_Web_APIs_Fetching_and_Processing_JSON_Data-main/
+├── Class_activity_3_Interacting_with_Web_APIs_Fetching_and_Processing_JSON_Data-main/
+│   ├── README.md
+│   ├── screenshots/                     # Demo screenshots (5 PNGs)
+│   └── my-api-fetcher/
+│       ├── .gitignore
+│       ├── README.md
+│       ├── main.py                      # API fetcher entry
+│       ├── requirements.txt
+│       ├── Week10_ Interacting with Web APIs_ Fetching and Processing JSON Data.docx
+│       ├── assignments/
+│       │   ├── assignment_guide.md
+│       │   └── student_submission_template.py
+│       ├── colab/
+│       │   └── Week10_Web_APIs_Colab.ipynb
+│       └── src/
+│           ├── __init__.py
+│           └── api_client.py            # API client module
+│
+└── Class_Activity_4_Project-Planning-Design-Building-an-Enhanced-Task-Manager-main/
     ├── README.md
-    ├── screenshots/                         # Demo screenshots (5 PNGs)
-    └── my-api-fetcher/
+    ├── screenshot/
+    │   └── image.png                    # Design phase screenshot
+    └── enhanced-task-manager-design/
         ├── .gitignore
+        ├── PLAN.md                      # Project plan
         ├── README.md
-        ├── main.py                          # API fetcher entry
-        ├── requirements.txt
-        ├── Week10_ Interacting with Web APIs_ Fetching and Processing JSON Data.docx
-        ├── assignments/
-        │   ├── assignment_guide.md
-        │   └── student_submission_template.py
-        ├── colab/
-        │   └── Week10_Web_APIs_Colab.ipynb
+        ├── Week11_ Project Planning & Design_ Building an Enhanced Task Manager (1).docx
+        ├── main.py                      # Entry point
+        ├── data/
+        │   └── tasks.json                # Task persistence
         └── src/
             ├── __init__.py
-            └── api_client.py                # API client module
+            ├── cli_interface.py          # CLI interface
+            ├── data_persistence.py       # Data storage handler
+            ├── task.py                   # Task model
+            └── task_manager.py           # Task manager logic
 ```
 
 ---

@@ -380,21 +380,23 @@ Week12/Week12_Final_Project_Development-main-main/
 ├── README.md                         # Documentation
 ├── SUBMISSION_CHECKLIST.md           # Submission checklist
 ├── Week12_ Final Project Development & Presentation.docx
-└── final_task_manager_project/
-    ├── .env
-    ├── .gitignore
-    ├── main.py                       # Main entry point
-    ├── data/
-    │   └── tasks.json                # Task data persistence
-    ├── src/
-    │   ├── __init__.py
-    │   ├── cli_interface.py          # CLI user interface
-    │   ├── data_persistence.py       # Data storage handler
-    │   ├── task.py                   # Task model
-    │   └── task_manager.py           # Task manager logic
-    └── tests/
-        ├── __init__.py
-        └── test_task_manager.py      # Unit tests
+├── final_task_manager_project/
+│   ├── .env
+│   ├── .gitignore
+│   ├── main.py                       # Main entry point
+│   ├── data/
+│   │   └── tasks.json                # Task data persistence
+│   ├── src/
+│   │   ├── __init__.py
+│   │   ├── cli_interface.py          # CLI user interface
+│   │   ├── data_persistence.py       # Data storage handler
+│   │   ├── task.py                   # Task model
+│   │   └── task_manager.py           # Task manager logic
+│   └── tests/
+│       ├── __init__.py
+│       └── test_task_manager.py      # Unit tests
+└── screenshot/
+    └── image.png                     # Final project screenshot
 ```
 
 ---
